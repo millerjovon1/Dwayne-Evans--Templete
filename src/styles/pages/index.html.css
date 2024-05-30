@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+
+
+}
+
+.navbar-toggler{
+  background-color: red;
+}
+
+h1{
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+}
+h2{
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+
+p{
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.navbar-nav{
+  color: white;
+}
+
+.banner{
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(67, 6, 1, 0.723)), url('../../images/dwayne_evans.jpeg');
+  height: 360px; /* Adjust the height to ensure full viewport coverage */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content{
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00dbff;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+#banner-logo{
+  margin-top: 12px;
+  width: 60px;
+
+}
+
+.about{
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.814), rgba(22, 2, 1, 0.984)), url('../../images/basketball-banner.jpeg');
+  height: 360px; /* Adjust the height to ensure full viewport coverage */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  .about {
+    margin: 0;
+    height: auto;
+    width: 100%; /* Set width to 100% for full width */
+  }/* Set width to 100% for full width */
+  }
+@media only screen and (max-width: 768px) {
+  .about {
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+.about-info{
+max-width: 800px;
+width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .about-info {
+    margin: 0;
+    max-width: 360px;
+    height: auto;
+    width: 100%; /* Set width to 100% for full width */
+  }/* Set width to 100% for full width */
+  }
+@media only screen and (max-width: 768px) {
+  .about-info {
+    margin: 0;
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+
+
+.camps-clinics{
+  background-color: black;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 480px) {
+  .camps-clinics {
+    display: -webkit-box; /* Safari */
+    display: flex;
+    -webkit-box-orient: vertical; /* Safari */
+    -webkit-box-direction: normal; /* Safari */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Set width to 100% for full width */
+  }/* Set width to 100% for full width */
+  }
+@media only screen and (max-width: 768px) {
+  .camps-clinics {
+    display: -webkit-box; /* Safari */
+    display: flex;
+    -webkit-box-orient: vertical; /* Safari */
+    -webkit-box-direction: normal; /* Safari */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Set width to 100% for full width */
+  }
+  }
+
+
+.section-title{
+  background-color: black;
+  /* border: 6px solid #FB7F3F ; */
+  color: #00dbff;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  text-align: center;
+}
+.camp-info{
+  max-width: 600px;
+  width: 100%;
+  color: white;
+  margin-left: 12px;
+  text-align: left;
+}
+@media only screen and (max-width: 480px) {
+  .camp-info {
+    margin: 0;
+    max-width: 360px;
+    height: auto;
+    width: 100%; /* Set width to 100% for full width */
+  }/* Set width to 100% for full width */
+  }
+@media only screen and (max-width: 768px) {
+  .camp-info {
+    margin: 0;
+    max-width: 360px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  color:white;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 360px;
+    width: 100%; /* Set width to 100% for full width */
+  }
+  }
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 360px;
+    width: 100%; /* Set width to 100% for full width */
+  }/* Set width to 100% for full width */
+  }
